@@ -1,5 +1,6 @@
 import styles from "../style";
 import { discount, robot } from "../assets";
+import GetStarted from "./GetStarted";
 
 const Hero = () => (
   <section id="home" className={`felx md:flex-row flex-col ${styles.paddingY}`}>
@@ -17,9 +18,14 @@ const Hero = () => (
 
       <div className="felx flex-row justify-between items-center w-full">
         <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]">
-          The Next <br className="sm:block hidden" />{" "}
-          <span className="text-gradient">Generation</span> Payment Method.
+          The Next <br className="sm:block hidden" />
+          {"  "}
+          <span className="text-gradient">Generation</span>
+          Payment Method.
         </h1>
+        <div className="ss:flex hidden md:mr-4 mr-0">
+          <GetStarted />
+        </div>
       </div>
     </div>
   </section>
